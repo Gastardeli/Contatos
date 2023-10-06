@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="titulo">Contato:</h1>
+    <form id="contato-form">
+
+
+        <div class="inputs">
+            <div class="group">
+                <input required="" type="text" id="nome">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Nome</label>
+            </div>
+
+
+            <div class="group">
+                <input required="" type="text" id="email">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+            </div>
+
+            <div class="group">
+                <input required="" type="tel" id="tel">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Telefone</label>
+            </div>
+
+            <div class="group">
+                <input required="" type="text" id="mensagem">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Adicione um comentário</label>
+            </div>
+        </div>
+        <button type="submit" class="adicionar">Adicionar Contato</button>
+
+    </form>
+
+
+    <div class="botoes">
+
+        <button id="mostrar-contatos">Mostrar Contatos</button>
+        <button id="ocultar-contatos">Ocultar Contatos</button>
+    </div>
+    <ul id="contato-lista"></ul>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

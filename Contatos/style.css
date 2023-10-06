@@ -1,0 +1,516 @@
+/* Reset CSS */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: #1C1C1C;
+   
+
+}
+
+input {
+    color: #FAFAFF;
+}
+
+.titulo {
+    color: #FAFAFF;
+    text-align: center;
+    margin: 50px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+li,
+ul {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.group {
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+#nome {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #DADDD8;
+    background: transparent;
+}
+
+#nome:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+#nome:focus~label,
+#nome:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #DADDD8;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #DADDD8;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+#nome:focus~.bar:before,
+#nome:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#nome:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #DADDD8;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+
+.group {
+    position: relative;
+}
+
+#email {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #DADDD8;
+    background: transparent;
+}
+
+#email:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+#email:focus~label,
+#email:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #DADDD8
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #DADDD8;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+#email:focus~.bar:before,
+#email:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#email:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #DADDD8;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+.group {
+    position: relative;
+}
+
+#tel {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #DADDD8;
+    background: transparent;
+}
+
+#tel:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+#tel:focus~label,
+#tel:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #DADDD8;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #DADDD8;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+#tel:focus~.bar:before,
+#tel:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#tel:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #DADDD8;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+.group {
+    position: relative;
+}
+
+#mensagem {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #DADDD8;
+    background: transparent;
+}
+
+#mensagem:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+#mensagem:focus~label,
+#mensagem:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: #DADDD8;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #DADDD8;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+#mensagem:focus~.bar:before,
+#mensagem:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#mensagem:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #DADDD8;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+
+.botoes {
+    align-items: center;
+    text-align: center;
+
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mostrar-contatos {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #EEF0F2;
+    background-color: #1C1C1C;
+    color: #FAFAFF;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+#ocultar-contatos {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #EEF0F2;
+    background-color: #1C1C1C;
+    color: #FAFAFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#mostrar-contatos:hover {
+
+    color: #1C1C1C;
+    background-color: #FAFAFF;
+    border: 2px solid black;
+    transition: 1s;
+    font-size: 15px;
+}
+
+#ocultar-contatos:hover {
+    color: #1C1C1C;
+    background-color: #FAFAFF;
+    border: 2px solid black;
+    transition: 1s;
+    font-size: 15px;
+}
+
+.adicionar {
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #EEF0F2;
+    background-color: #1C1C1C;
+    color: #FAFAFF;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 30px;
+}
+
+.adicionar:hover {
+    color: #1C1C1C;
+    background-color: #FAFAFF;
+    border: 2px solid black;
+    transition: 1s;
+    font-size: 15px;
+}
+
+#contato-lista{
+    border: 1px solid #FAFAFF;
+    color: #FAFAFF;
+    margin: 10px;
+}
